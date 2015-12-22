@@ -170,15 +170,15 @@ typedef struct {
     /**
      * Copies the data from the source into the provided value.
      *
-     * @param handle An optional pointer to user-defined data for the specific data source
-     * @param nodeid Id of the read node
-     * @param includeSourceTimeStamp If true, then the datasource is expected to set the source
+     * @param handle: An optional pointer to user-defined data for the specific data source
+     * @param nodeid: Id of the read node
+     * @param includeSourceTimeStamp:  If true, then the datasource is expected to set the source
      *        timestamp in the returned value
-     * @param range If not null, then the datasource shall return only a selection of the (nonscalar)
+     * @param range: If not null, then the datasource shall return only a selection of the (nonscalar)
      *        data. Set UA_STATUSCODE_BADINDEXRANGEINVALID in the value if this does not apply.
-     * @param value The (non-null) DataValue that is returned to the client. The data source sets the
+     * @param value: The (non-null) DataValue that is returned to the client. The data source sets the
      *        read data, the result status and optionally a sourcetimestamp.
-     * @return Returns a status code for logging. Error codes intended for the original caller are set
+     * @return Returns: a status code for logging. Error codes intended for the original caller are set
      *         in the value. If an error is returned, then no releasing of the value is done.
      */
     UA_StatusCode (*read)(void *handle, const UA_NodeId nodeid, UA_Boolean includeSourceTimeStamp,

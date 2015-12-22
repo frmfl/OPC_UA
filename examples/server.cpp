@@ -6,8 +6,10 @@
 #include <signal.h>
 #include <iostream>
 #include <cstring>
+#include <ua_types_generated.h>
 
-#ifdef NOT_AMALGATED
+
+#ifdef UA_NO_AMALGAMATION
 # include "ua_server.h"
 # include "logger_stdout.h"
 # include "networklayer_tcp.h"
@@ -38,7 +40,13 @@ int main() {
     UA_Server_addNetworkLayer(server, ServerNetworkLayerTCP_new(UA_ConnectionConfig_standard, 16664));
     UA_Server_setLogger(server, logger);
 
-    // add a variable node to the adresspace
+    // add a int variable node to the address space
+
+    UA_ObjectAttributes myObj;
+    UA_ObjectAttributes_init(&myObj);
+    myObj.description = UA_LOCALIZEDTEXT_ALLOC("en_US","Object owned by Flo");
+    myObj.displayName = UA_LOCALIZEDTEXT_ALLOC("en_US","FL0's cool object");
+
     UA_VariableAttributes attr;
     UA_VariableAttributes_init(&attr);
     UA_Int32 myInteger = 42;

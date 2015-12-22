@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+b743918291991653293b1371c6d437ff src_generated/nodeset.h
+3f3fefd6d093bcfeefb67d5e38239039 src_generated/ua_nodeids.h
+2858a88641a50e7c69a4687c70af9007 src_generated/ua_transport_generated.c
+a266ff8ed17ab59b0e06aceb727b8207 src_generated/ua_types_generated.c

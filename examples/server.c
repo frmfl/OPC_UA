@@ -46,8 +46,7 @@ UA_Logger logger = Logger_Stdout;
 /*************************/
 /* Read-only data source */
 /*************************/
-static UA_StatusCode
-readTimeData(void *handle, const UA_NodeId nodeId, UA_Boolean sourceTimeStamp,
+static UA_StatusCode readTimeData(void *handle, const UA_NodeId nodeId, UA_Boolean sourceTimeStamp,
              const UA_NumericRange *range, UA_DataValue *value) {
     if(range) {
         value->hasStatus = UA_TRUE;
@@ -56,6 +55,7 @@ readTimeData(void *handle, const UA_NodeId nodeId, UA_Boolean sourceTimeStamp,
     }
 	UA_DateTime currentTime = UA_DateTime_now();
     UA_Variant_setScalarCopy(&value->value, &currentTime, &UA_TYPES[UA_TYPES_DATETIME]);
+
 	value->hasValue = UA_TRUE;
 	if(sourceTimeStamp) {
 		value->hasSourceTimestamp = UA_TRUE;
@@ -69,8 +69,7 @@ readTimeData(void *handle, const UA_NodeId nodeId, UA_Boolean sourceTimeStamp,
 /*      Only on Linux        */
 /*****************************/
 FILE* temperatureFile = NULL;
-static UA_StatusCode
-readTemperature(void *handle, const UA_NodeId nodeId, UA_Boolean sourceTimeStamp,
+static UA_StatusCode readTemperature(void *handle, const UA_NodeId nodeId, UA_Boolean sourceTimeStamp,
                 const UA_NumericRange *range, UA_DataValue *value) {
     if(range) {
         value->hasStatus = UA_TRUE;
@@ -96,6 +95,7 @@ readTemperature(void *handle, const UA_NodeId nodeId, UA_Boolean sourceTimeStamp
 	return UA_STATUSCODE_GOOD;
 }
 
+
 /*************************/
 /* Read-write status led */
 /*************************/
@@ -106,11 +106,9 @@ FILE* triggerFile = NULL;
 FILE* ledFile = NULL;
 UA_Boolean ledStatus = 0;
 
-static UA_StatusCode
-readLedStatus(void *handle, UA_NodeId nodeid, UA_Boolean sourceTimeStamp,
+static UA_StatusCode readLedStatus(void *handle, UA_NodeId nodeid, UA_Boolean sourceTimeStamp,
               const UA_NumericRange *range, UA_DataValue *value) {
-    if(range)
-        return UA_STATUSCODE_BADINDEXRANGEINVALID;
+    if(range) return UA_STATUSCODE_BADINDEXRANGEINVALID;
 
     value->hasValue = UA_TRUE;
     UA_StatusCode retval = UA_Variant_setScalarCopy(&value->value, &ledStatus,
@@ -126,8 +124,7 @@ readLedStatus(void *handle, UA_NodeId nodeid, UA_Boolean sourceTimeStamp,
     return UA_STATUSCODE_GOOD;
 }
 
-static UA_StatusCode
-writeLedStatus(void *handle, const UA_NodeId nodeid,
+static UA_StatusCode writeLedStatus(void *handle, const UA_NodeId nodeid,
                const UA_Variant *data, const UA_NumericRange *range) {
     if(range)
         return UA_STATUSCODE_BADINDEXRANGEINVALID;
@@ -200,6 +197,9 @@ nodeIter(UA_NodeId childId, UA_Boolean isInverse, UA_NodeId referenceTypeId, voi
     return UA_STATUSCODE_GOOD;
 }
 
+/********/
+/* MAIN */
+/********/
 int main(int argc, char** argv) {
     signal(SIGINT, stopHandler); /* catches ctrl-c */
 #ifdef UA_MULTITHREADING
@@ -226,17 +226,20 @@ int main(int argc, char** argv) {
                                         UA_NODEID_NUMERIC(0, UA_NS0ID_ORGANIZES), dateName,
                                         UA_NODEID_NULL, v_attr, dateDataSource, &dataSourceId);
 
-#ifndef _WIN32
+#ifndef _WIN32  // ONLY NOT WINDOWS OPTION   
+    /*************************************************/
     /* cpu temperature monitoring for linux machines */
-    const char *temperatureFileName = "/sys/class/thermal/thermal_zone0/temp"; // RaspberryPi
-    // const char *temperatureFileName = "/sys/class/hwmon/hwmon0/device/temp1_input"; // Beaglebone
-    // const char *temperatureFileName = "/sys/class/thermal/thermal_zone3/temp"; // Intel Edison Alternative 1
-    // const char *temperatureFileName = "/sys/class/thermal/thermal_zone4/temp"; // Intel Edison Alternative 2
+    /*************************************************/
+    const char *temperatureFileName = "/sys/class/thermal/thermal_zone0/temp";          // RaspberryPi
+    // const char *temperatureFileName = "/sys/class/hwmon/hwmon0/device/temp1_input";  // Beaglebone
+    // const char *temperatureFileName = "/sys/class/thermal/thermal_zone3/temp";       // Intel Edison Alternative 1
+    // const char *temperatureFileName = "/sys/class/thermal/thermal_zone4/temp";       // Intel Edison Alternative 2
     if((temperatureFile = fopen(temperatureFileName, "r"))) {
         // add node with the data source
         UA_DataSource temperatureDataSource = (UA_DataSource) {
             .handle = NULL, .read = readTemperature, .write = NULL};
         const UA_QualifiedName tempName = UA_QUALIFIEDNAME(1, "cpu temperature");
+        // initialize 
         UA_VariableAttributes_init(&v_attr);
         v_attr.description = UA_LOCALIZEDTEXT("en_US","temperature");
         v_attr.displayName = UA_LOCALIZEDTEXT("en_US","temperature");
@@ -245,8 +248,9 @@ int main(int argc, char** argv) {
                                             UA_NODEID_NUMERIC(0, UA_NS0ID_ORGANIZES), tempName,
                                             UA_NODEID_NULL, v_attr, temperatureDataSource, NULL);
     }
-
+    /***********************/
     /* LED control for rpi */
+    /***********************/
     if(access("/sys/class/leds/led0/trigger", F_OK ) != -1 ||
        access("/sys/class/leds/led0/brightness", F_OK ) != -1) {
         if((triggerFile = fopen("/sys/class/leds/led0/trigger", "w")) &&
@@ -274,7 +278,8 @@ int main(int argc, char** argv) {
             UA_LOG_WARNING(logger, UA_LOGCATEGORY_USERLAND,
                            "[Raspberry Pi] LED file exist, but is not accessible (try to run server with sudo)");
     }
-#endif
+
+#endif 
 
     // add a static variable node to the adresspace
     UA_VariableAttributes myVar;

@@ -249,7 +249,7 @@ void UA_Server_addNetworkLayer(UA_Server *server, UA_ServerNetworkLayer *network
 }
 
 void UA_Server_setServerCertificate(UA_Server *server, UA_ByteString certificate) {
-    for(size_t i = 0; i < server->endpointDescriptionsSize; i++)
+    for(size_t i =   0; i < server->endpointDescriptionsSize; i++)
         UA_ByteString_copy(&certificate,
                            &server->endpointDescriptions[i].serverCertificate);
 }
@@ -538,7 +538,7 @@ UA_Server * UA_Server_new(UA_ServerConfig config) {
 
     UA_Job cleanup = {.type = UA_JOBTYPE_METHODCALL,
                       .job.methodCall = {.method = UA_Server_cleanup, .data = NULL} };
-    UA_Server_addRepeatedJob(server, cleanup, 10000, NULL);
+    UA_Server_addReferenceRepeatedJob(server, cleanup, 10000, NULL);
 
     /**********************/
     /* Server Information */

@@ -1,0 +1,14 @@
+/home/florian/coding/raspberry_pi/open62541/build/CMakeFiles/client.dir
+/home/florian/coding/raspberry_pi/open62541/build/CMakeFiles/client_firstSteps.dir
+/home/florian/coding/raspberry_pi/open62541/build/CMakeFiles/client_static.dir
+/home/florian/coding/raspberry_pi/open62541/build/CMakeFiles/open62541.dir
+/home/florian/coding/raspberry_pi/open62541/build/CMakeFiles/open62541-object.dir
+/home/florian/coding/raspberry_pi/open62541/build/CMakeFiles/open62541-static.dir
+/home/florian/coding/raspberry_pi/open62541/build/CMakeFiles/server.dir
+/home/florian/coding/raspberry_pi/open62541/build/CMakeFiles/server_datasource.dir
+/home/florian/coding/raspberry_pi/open62541/build/CMakeFiles/server_firstSteps.dir
+/home/florian/coding/raspberry_pi/open62541/build/CMakeFiles/server_method.dir
+/home/florian/coding/raspberry_pi/open62541/build/CMakeFiles/server_nodeset.dir
+/home/florian/coding/raspberry_pi/open62541/build/CMakeFiles/server_repeated_job.dir
+/home/florian/coding/raspberry_pi/open62541/build/CMakeFiles/server_static.dir
+/home/florian/coding/raspberry_pi/open62541/build/CMakeFiles/server_variable.dir

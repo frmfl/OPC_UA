@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/Debug/src_generated/ua_config.h">
+      <sourceFolder url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/Debug/src_generated/ua_config.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/MinSizeRel/src_generated/ua_config.h">
+      <sourceFolder url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/MinSizeRel/src_generated/ua_config.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/RelWithDebInfo/src_generated/ua_config.h">
+      <sourceFolder url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/RelWithDebInfo/src_generated/ua_config.h" isTestSource="false" />
+    </content>
+    <content url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/Release/src_generated/ua_config.h">
+      <sourceFolder url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/Release/src_generated/ua_config.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/deps/pcg_basic.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/deps/pcg_basic.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/deps/queue.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/logger_stdout.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/logger_stdout.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/networklayer_tcp.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/examples/networklayer_tcp.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/ua_client.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/ua_client_highlevel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/ua_config.h.in" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/ua_connection.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/ua_job.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/ua_log.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/ua_server.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/ua_server_external_ns.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/ua_statuscodes.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/ua_types.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/client/ua_client.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/client/ua_client_highlevel.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/client/ua_client_internal.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_nodes.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_nodes.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_nodestore.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_nodestore.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_securechannel_manager.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_securechannel_manager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_server.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_server_binary.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_server_internal.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_server_worker.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_services.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_services_attribute.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_services_discovery.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_services_nodemanagement.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_services_securechannel.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_services_session.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_services_view.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_session_manager.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/server/ua_session_manager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ua_connection.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ua_securechannel.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ua_securechannel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ua_session.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ua_session.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ua_types.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ua_types_encoding_binary.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ua_types_encoding_binary.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ua_util.h" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Header Search Paths">
+        <CLASSES>
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/Debug/src_generated" />
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/MinSizeRel/src_generated" />
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/RelWithDebInfo/src_generated" />
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/Release/src_generated" />
+          <root url="file://$MODULE_DIR$/deps" />
+          <root url="file://$MODULE_DIR$/include" />
+          <root url="file://$MODULE_DIR$/src" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include/cilk" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include/sanitizer" />
+          <root url="file:///usr/local/include" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/Debug/src_generated" />
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/MinSizeRel/src_generated" />
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/RelWithDebInfo/src_generated" />
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/Release/src_generated" />
+          <root url="file://$MODULE_DIR$/deps" />
+          <root url="file://$MODULE_DIR$/include" />
+          <root url="file://$MODULE_DIR$/src" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include/cilk" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.9/include/sanitizer" />
+          <root url="file:///usr/local/include" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/Debug/src_generated/ua_config.h" />
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/MinSizeRel/src_generated/ua_config.h" />
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/RelWithDebInfo/src_generated/ua_config.h" />
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/d9610b6d/d9610b6d/Release/src_generated/ua_config.h" />
+          <root url="file://$MODULE_DIR$/deps/queue.h" />
+          <root url="file://$MODULE_DIR$/deps/pcg_basic.h" />
+          <root url="file://$MODULE_DIR$/deps/pcg_basic.c" />
+          <root url="file://$MODULE_DIR$/include/ua_types.h" />
+          <root url="file://$MODULE_DIR$/include/ua_config.h.in" />
+          <root url="file://$MODULE_DIR$/include/ua_server_external_ns.h" />
+          <root url="file://$MODULE_DIR$/include/ua_client.h" />
+          <root url="file://$MODULE_DIR$/include/ua_server.h" />
+          <root url="file://$MODULE_DIR$/include/ua_client_highlevel.h" />
+          <root url="file://$MODULE_DIR$/include/ua_job.h" />
+          <root url="file://$MODULE_DIR$/include/ua_statuscodes.h" />
+          <root url="file://$MODULE_DIR$/include/ua_connection.h" />
+          <root url="file://$MODULE_DIR$/include/ua_log.h" />
+          <root url="file://$MODULE_DIR$/src/server/ua_nodes.c" />
+          <root url="file://$MODULE_DIR$/src/server/ua_services_nodemanagement.c" />
+          <root url="file://$MODULE_DIR$/src/server/ua_server_worker.c" />
+          <root url="file://$MODULE_DIR$/src/server/ua_services_securechannel.c" />
+          <root url="file://$MODULE_DIR$/src/server/ua_server_binary.c" />
+          <root url="file://$MODULE_DIR$/src/server/ua_session_manager.h" />
+          <root url="file://$MODULE_DIR$/src/server/ua_securechannel_manager.c" />
+          <root url="file://$MODULE_DIR$/src/server/ua_server_internal.h" />
+          <root url="file://$MODULE_DIR$/src/server/ua_services_attribute.c" />
+          <root url="file://$MODULE_DIR$/src/server/ua_session_manager.c" />
+          <root url="file://$MODULE_DIR$/src/client/ua_client_highlevel.c" />
+          <root url="file://$MODULE_DIR$/src/client/ua_client_internal.h" />
+          <root url="file://$MODULE_DIR$/src/client/ua_client.c" />
+          <root url="file://$MODULE_DIR$/src/ua_types.c" />
+          <root url="file://$MODULE_DIR$/src/ua_types_encoding_binary.h" />
+          <root url="file://$MODULE_DIR$/src/ua_session.h" />
+          <root url="file://$MODULE_DIR$/src/ua_util.h" />
+          <root url="file://$MODULE_DIR$/src/ua_session.c" />
+          <root url="file://$MODULE_DIR$/src/ua_securechannel.h" />
+          <root url="file://$MODULE_DIR$/src/ua_types_encoding_binary.c" />
+          <root url="file://$MODULE_DIR$/src/ua_securechannel.c" />
+          <root url="file://$MODULE_DIR$/src/ua_connection.c" />
+          <root url="file://$MODULE_DIR$/src/server/ua_services_view.c" />
+          <root url="file://$MODULE_DIR$/src/server/ua_server.c" />
+          <root url="file://$MODULE_DIR$/src/server/ua_services_session.c" />
+          <root url="file://$MODULE_DIR$/src/server/ua_securechannel_manager.h" />
+          <root url="file://$MODULE_DIR$/src/server/ua_nodestore.c" />
+          <root url="file://$MODULE_DIR$/src/server/ua_nodes.h" />
+          <root url="file://$MODULE_DIR$/src/server/ua_services_discovery.c" />
+          <root url="file://$MODULE_DIR$/src/server/ua_services.h" />
+          <root url="file://$MODULE_DIR$/src/server/ua_nodestore.h" />
+        </excluded>
+      </library>
+    </orderEntry>
+  </component>
+</module>
